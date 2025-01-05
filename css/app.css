@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&family=Quicksand:wght@500;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff8ea;
+    color: #594545;
+    min-height: 2000px;
+}
+
+/* jumbotron */
+.jumbotron {
+    color: #fff8ea;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../img/jumbotron2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Pseudo-element to add filter */
+.jumbotron::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Apply filter here */
+    z-index: 1; /* Ensure the filter is under the text */
+}
+
+.jumbotron .judul {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+    margin-top: -23%;
+    z-index: 2; /* Ensure the text appears above the filter */
+    position: relative;
+}
+
+
+.jumbotron .judul h1 {
+    font-size: 4.5em;
+    color: #fff8ea;
+    text-shadow: 1px 1px 3px rgba(89, 69, 69, 0.5);
+}
+
+.jumbotron .judul p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    line-height: 1.4;
+    text-shadow: 1px 1px 3px rgba(89, 69, 69, 0.5);
+}
+/* akhir jumbotron */
+
+/* navbar */
+header {
+    display: inline;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    background-color: rgba(89, 69, 69, 0.8);
+    border-bottom: 1px solid #fff8ea;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+nav .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff8ea;
+    font-style: italic;
+}
+
+nav .navbar-logo span {
+    color: #9E7676;
+}
+
+nav .navbar-nav a {
+    color: #fff8ea;
+    display: inline-block;
+    font-size: 1.25rem;
+    margin: 0 16px;
+    padding: 2px 10px;
+}
+
+nav .navbar-nav a:hover {
+    color: #594545;
+    border-radius: 99999px;
+    background-color: #fff8ea;  
+}
+
+nav .navbar-extra a {
+    color: #fff8ea;
+    margin: 0 0.5rem;
+}
+
+nav .navbar-extra a:hover {
+    color: #9E7676; 
+}
+
+#menu {
+    display: none;
+}
+/* akhir navbar */
+
+main {
+    padding: 20px;
+    
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+  }
+
+/* content */
+#content {
+    flex: 5;
+  
+    display: flex;
+    flex-flow: column nowrap; 
+    gap: 1rem 2rem;
+    padding-bottom: 5rem;
+}
+
+main {
+    flex-flow: column nowrap;
+}
+.card {
+    margin: 2% 15%;
+    box-shadow: 0 4px 8px 0 rgba(89, 69, 69, 0.5);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: justify;
+  }
+
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 2rem;
+  }
+
+.card p{
+    text-align: center;
+}
+
+p {
+    padding-bottom: 2rem;
+}
+
+
+/* akhir content */
+
+/* about */
+.about {
+    padding: 1.4rem 7% 6rem; 
+   
+}
+
+.about .about-flex {
+    display: flex;
+    gap: 2rem;
+}
+
+.about .about-flex img {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(89, 69, 69, 0.5);
+
+}
+
+h2 {
+    padding-top: 4rem;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+/* akhir about */
+
+/* project */
+.project-con {
+    padding-bottom: 3rem;
+}
+
+#project {
+   
+    padding-top: 6rem;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+
+.project {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap; /* Menambahkan flex-wrap agar elemen turun ke bawah jika ruang tidak cukup */
+}
+
+.project img {
+    transition: 0.7s;
+    max-width: 15rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(89, 69, 69, 0.5);
+    margin: 0.5rem;
+    height: auto; /* Menjaga proporsi gambar */
+    width: 18rem; 
+    height: 9rem;
+    object-fit: cover;
+}
+
+.project img:hover {
+    transition: 0.7s;
+    box-shadow: 0 4px 8px 10px rgba(89, 69, 69, 0.5);
+    max-height: 15.5rem;
+}
+
+/* akhir project */
+
+/* identitas diri */
+aside {
+    margin: 0 auto;
+    position: relative;
+}
+
+figure {
+    padding-bottom: 1rem;
+    max-width: 15rem;
+}
+
+figure p{
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+/* akhir identitas diri */
+.contact {
+    padding: 1.4rem 7% 6rem; 
+   
+}
+
+.contact .contact-flex {
+    display: flex;
+    gap: 2rem;
+}
+
+.contact-flex .contact-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact .contact-flex img {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(89, 69, 69, 0.5);
+
+}
+
+.contact-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contact-icon a{
+    color: #594545;
+    margin: 0 0.5rem;
+}
+
+h2 {
+    padding-top: 4rem;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(89, 69, 69, 1);
+}
+
+footer p {
+    color: #fff8ea;
+}
+
+
+/* akhir footer */
+/* media query */
+@media screen and (max-width: 1200px){
+    .project {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    html {
+        font-size: 80%;
+    }
+
+    .jumbotron {
+        min-height: 50vh;
+    }
+
+    .project {
+        flex-wrap: wrap;
+    }
+    
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 65%;
+    }
+    
+    .jumbotron {
+        min-height: 40vh;
+    }
+
+    #menu {
+        display: inline-block;
+    }
+    
+    nav {
+        right: 100;
+    }
+
+    nav .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #9E7676;
+        width: 15rem;
+        height: 100vh;
+        transition: 0.3s;
+    }
+    
+    nav .navbar-nav.active {
+        right: 0;
+    }
+    
+    nav .navbar-nav a {
+        color: #fff; 
+        display: block;
+        margin: 1rem;
+        padding: 0.5rem;
+        font-size: 1.5rem;}
+
+    .about-flex {
+        flex-wrap: wrap;
+    }
+
+    .project {
+        flex-wrap: wrap;
+    }
+    .contact-flex {
+        flex-wrap: wrap;
+    }
+    
+}
+/* media query */
+@media screen and (max-width: 1200px){
+    .product-wrap {
+        display: block;
+    }
+
+    .product-wrap a{
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    html {
+        font-size: 80%;
+    }
+
+    .product-wrap {
+        display: block;
+    }
+    
+    .product-wrap a{
+        margin-top: 60px;
+    }
+    
+}
