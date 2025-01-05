@@ -349,19 +349,19 @@ footer p {
     nav {
         right: 100;
     }
-
+    
     nav .navbar-nav {
+        visibility: hidden;
         position: absolute;
         top: 100%;
-        right: -100%;
         background-color: #9E7676;
         width: 15rem;
         height: 100vh;
-        transition: 0.3s;
     }
     
     nav .navbar-nav.active {
         right: 0;
+        visibility: visible;
     }
     
     nav .navbar-nav a {
