@@ -1,126 +1,213 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="css/app.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- feather icon -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candra Zulkarnain | Portfolio</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
-
-    <!-- CSS Utama -->
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-    <header>
-        <div class="jumbotron">
-            <div class="judul">
-                <h1>Candra Zulkarnain</h1>
-                <p>Multidisciplinary Developer | Student at Universitas Sebelas Maret | Machine Learning Cohort at Bangkit Academy 2024</p>
-            </div>
+    <!-- Header/Navbar -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">CZ</a>
+                
+                <div class="navbar-links">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                
+                <button class="menu-toggle" id="menu-toggle">
+                    <i data-feather="menu"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Candra Zulkarnain</h1>
+                <h2 class="hero-subtitle">Multidisciplinary Developer & Machine Learning Enthusiast</h2>
+                <p class="hero-description">Combining creativity and technology to build innovative solutions that make an impact.</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
             </div>
         </div>
+    </section>
 
-        <nav>
-            <a href="#" class="navbar-logo">Candra<span>Z</span></a>
-
-            <div class="navbar-nav">
-                <a href="#">Home</a>
-                <a href="#about">About</a>
-                <a href="#project">Projects</a>
-                <a href="#contact">Contact</a>
-            </div>
-
-            <div class="navbar-extra">
-                <a href="#" id="menu"><i data-feather="menu"></i></a>
-            </div>
-        </nav>
-        
-    </header>
-    <main>
-        <div id="content">
-            <article class="card about">
-                <h2 id="about">About Me</h2>
-                <section class="about-flex"> <img src="img/about3.jpg" class="featured-image" alt="geografis">
-                    <p>
-                        I am a Junior Software Engineer currently focusing on Machine Learning and IoT, but I also possess a wide range of skills in Web Development, Mobile App Development, Game Development, and 3D Animation. I enjoy combining creativity and technology to create innovative solutions that have a positive impact.
-                    </p>
-                </section>
-               
-            </article>
-            <article class="card project-con">
-                <h2 id="project">My Projects</h2>
-                 <p>This is some of my projects that i have done and currently working on
-                </p>
-            
-                <section class="project">
-                    <figure>
-                        <img src="img/reca.png" alt="respira-care">
-                        <figcaption>Respira Care</figcaption>
-                        <p>AI-based IoT health monitoring and consultation system</p>
-                    </figure>
-                    <figure>
-                        <img src="img/vair.png" alt="vair-otomotif">
-                        <figcaption>Vair Otomotif Website</figcaption>
-                        <p>A responsive website built using HTML, CSS, and JavaScript, showcasing a sleek design and user-friendly interface</p>
-                    </figure>
-                    <figure>
-                        <img src="img/tsubasa.jpg" alt="tsubasa">
-                        <figcaption>Tsubasa 3D Animation</figcaption>
-                        <p>30-second 3D animation project using Blender, utilizing techniques such as UV Mapping, Lighting, Rigging, Camera Animation with a camera rig, and Camera Switching via Markers</p>
-                    </figure>
-                    <figure>
-                        <img src="img/Sahabat Jalan.png" alt="sahabat jalan">
-                        <figcaption>Sahabat Jalan</figcaption>
-                        <p>A travel application that provides personal recommendations and guides.
-                        </p>
-                    </figure> 
-                </section>
-            </article>
-            <article class="card contact">
-                <h2 id="contact">Get In Touch</h2>
-                <section class="contact-flex"> 
-                    <div class="contact-content">
-                        <p>
-                            If you have any inquiries or would like to connect for any reason, I would be delighted to hear from you and offer any assistance possible. 
-                        </p>
-                        <div>
-                            <p>
-                                candrazulkarnain8@gmail.com
-
-                            </p>
-                            <div class="contact-icon">
-                                <a href="mailto:candrazulkarnain8@gmail.com" id="mail"><i data-feather="mail"></i></a>
-                                <a href="https://github.com/CandraZul" id="github"><i data-feather="github"></i></a>
-                                <a href="https://www.instagram.com/nianraklus/" id="instagram"><i data-feather="instagram"></i></a>
-                                <a href="https://www.linkedin.com/in/candra-zulkarnain/" id="linkedin"><i data-feather="linkedin"></i></a>
-                            </div>
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="img/about3.jpg" alt="Candra Zulkarnain">
+                </div>
+                <div class="about-text">
+                    <p>I am a Junior Software Engineer currently focusing on Machine Learning and IoT, with a passion for creating innovative solutions at the intersection of technology and creativity.</p>
+                    <p>My multidisciplinary background allows me to approach problems from different perspectives, whether I'm working on web applications, mobile apps, or machine learning models.</p>
+                    <div class="skills">
+                        <h3>Skills & Expertise</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Machine Learning</span>
+                            <span class="skill-tag">IoT</span>
+                            <span class="skill-tag">Web Development</span>
+                            <span class="skill-tag">Mobile Development</span>
+                            <span class="skill-tag">3D Animation</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Blender</span>
                         </div>
                     </div>
-                    <img src="img/contact2.jpg" class="featured-image" alt="geografis">
-                </section>
-                
-            </article>
+                </div>
+            </div>
         </div>
-        
-    </main>
+    </section>
 
-    <footer>
-        <p>Candra Zulkarnain &#169; 2025</p>
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">A selection of my recent work and collaborations</p>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/reca.png" alt="Respira Care">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Respira Care</h3>
+                        <p class="project-description">AI-based IoT health monitoring and consultation system for respiratory conditions.</p>
+                        <div class="project-tech">
+                            <span>AI</span>
+                            <span>IoT</span>
+                            <span>Healthcare</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/vair.png" alt="Vair Otomotif">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Vair Otomotif Website</h3>
+                        <p class="project-description">Responsive automotive website with sleek design and intuitive user interface.</p>
+                        <div class="project-tech">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/tsubasa.jpg" alt="Tsubasa Animation">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Tsubasa 3D Animation</h3>
+                        <p class="project-description">30-second 3D animation showcasing advanced Blender techniques.</p>
+                        <div class="project-tech">
+                            <span>Blender</span>
+                            <span>3D Animation</span>
+                            <span>Rigging</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/Sahabat Jalan.png" alt="Sahabat Jalan">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sahabat Jalan</h3>
+                        <p class="project-description">Travel application providing personalized recommendations and guides.</p>
+                        <div class="project-tech">
+                            <span>Mobile App</span>
+                            <span>Travel</span>
+                            <span>Recommendation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">I'm always open to discussing new projects, creative ideas or opportunities.</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-method">
+                        <i data-feather="mail"></i>
+                        <h3>Email</h3>
+                        <a href="mailto:candrazulkarnain8@gmail.com">candrazulkarnain8@gmail.com</a>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/CandraZul" target="_blank" aria-label="GitHub">
+                            <i data-feather="github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/candra-zulkarnain/" target="_blank" aria-label="LinkedIn">
+                            <i data-feather="linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/nianraklus/" target="_blank" aria-label="Instagram">
+                            <i data-feather="instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-image">
+                    <img src="img/contact2.jpg" alt="Contact Illustration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; <span id="year"></span> Candra Zulkarnain. All rights reserved.</p>
+                <a href="#home" class="back-to-top">
+                    <i data-feather="arrow-up"></i>
+                </a>
+            </div>
+        </div>
     </footer>
 
-     <!-- Feather Icon -->
-     <script>
-        feather.replace()
-      </script>
-
-     <!-- My Javascript -->
-     <script src="js/script.js"></script>
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <script>
+        feather.replace();
+        
+        // Update copyright year automatically
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
- 
- 
- 
-
-
- 
- 
